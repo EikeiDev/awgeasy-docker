@@ -51,6 +51,7 @@ All settings are stored in an .env file, below is a description of each line.
 | `WG_HOST` | - | `vpn.myserver.com` | The public hostname of your VPN server. |
 | `LANGUAGE` | `en` | `de` | Web UI language (Supports: en, ru, tr, no, pl, fr, de, ca, es). |
 | `PORT` | `51821` | `6789` | TCP port for Web UI. |
+| `WG_DEVICE`|`eth0`|`ens6f0`| Ethernet device the wireguard traffic should be forwarded through. |
 | `WG_DEFAULT_ADDRESS` | `10.8.0.x` | `10.6.0.x` | Clients IP address range. |
 | `WG_DEFAULT_DNS` | `1.1.1.1` | `8.8.8.8, 8.8.4.4` | DNS server clients will use. If set to blank value, clients will not use any DNS. |
 | `WG_ALLOWED_IPS` | `0.0.0.0/0, ::/0` | `192.168.15.0/24, 10.0.1.0/24` | Allowed IPs clients will use. |
