@@ -3,7 +3,7 @@
 You have found the easiest way to install & manage AmneziaWG on any Linux host!
 
 <p align="center">
-  <img src="./assets/screenshot.png" width="802" />
+  <img src="https://github.com/spcfox/amnezia-wg-easy/raw/master/assets/screenshot.png" width="802" />
 </p>
 
 ## Features
