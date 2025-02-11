@@ -62,4 +62,5 @@ All settings are stored in an .env file, below is a description of each line.
 ## Thanks
 
 Based on [wg-easy](https://github.com/wg-easy/wg-easy) by Emile Nijssen.
+
 For adaptating wg-easy to AmneziaWG [amnezia-wg-easy](https://github.com/w0rng/amnezia-wg-easy) by Anton Abramov
