@@ -23,6 +23,26 @@ You have found the easiest way to install & manage AmneziaWG on any Linux host!
 
 * A host with Docker installed.
 
+## Installation
+
+### 1. Install Docker
+
+If you haven't installed Docker yet, install it by running:
+
+```bash
+curl -sSL https://get.docker.com | sh
+sudo usermod -aG docker $(whoami)
+exit
+```
+
+And log in again.
+
+### 2. Run AmneziaWG Easy
+
+1) Clone this repo.
+2) Edit your .env file by inserting your data there.
+3) Use ```docker compose up -d``` for starting AmneziaWG Easy
+
 ## Settings
 All settings are stored in an .env file, below is a description of each line.
 
@@ -34,9 +54,11 @@ All settings are stored in an .env file, below is a description of each line.
 | `WG_DEFAULT_ADDRESS` | `10.8.0.x` | `10.6.0.x` | Clients IP address range. |
 | `WG_DEFAULT_DNS` | `1.1.1.1` | `8.8.8.8, 8.8.4.4` | DNS server clients will use. If set to blank value, clients will not use any DNS. |
 | `WG_ALLOWED_IPS` | `0.0.0.0/0, ::/0` | `192.168.15.0/24, 10.0.1.0/24` | Allowed IPs clients will use. |
-| `PASSWORD` | - | `foobar123` | When set, requires a password when logging in to the Web UI. |
+| `USE_GRAVATAR`| `false`| `true`| Use or not GRAVATAR service |
+| `DICEBEAR_TYPE`| `false`| `bottts`| see [dicebear types](https://www.dicebear.com/styles/) |
 | `PASSWORD_HASH` | - | `$2a$12$e.ywzeb6ZcQ6nf21ZxEFb.6D.VxnLSTQjIYKqEXFZoWtI2W/bSqMS` | When set, requires a password when logging in to the Web UI. Get hash: docker run -it ghcr.io/w0rng/amnezia-wg-easy wgpw YOUR_PASSWORD |
 
 ## Thanks
 
 Based on [wg-easy](https://github.com/wg-easy/wg-easy) by Emile Nijssen.
+For adaptating wg-easy to AmneziaWG [amnezia-wg-easy](https://github.com/w0rng/amnezia-wg-easy) by Anton Abramov
